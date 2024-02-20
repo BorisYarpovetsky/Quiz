@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:orientation="vertical"
+    android:background="#0D1F6BB8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1F6BB8">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/aroow_back_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:id="@+id/back_btn"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/gromkost_icon"
+            android:id="@+id/gromkostBtn"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Selected Topic Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:id="@+id/topicName"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/timer_icon"
+                android:layout_marginEnd="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:59"
+                android:textColor="#FAA72F"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/timer"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_back_white"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="1/10"
+        android:textColor="#1F6BB8"
+        android:id="@+id/questions"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="-12dp"
+        android:background="@drawable/round_back_light_yellow"
+        android:gravity="center"
+        android:minHeight="100dp"
+        android:text="Qestion willbe here..."
+        android:padding="20dp"
+        android:textColor="#CC000000"
+        android:textSize="16sp"
+        android:id="@+id/question"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_back_white_stroke_blue"
+        android:text="Option 1"
+        android:textColor="#1F6BB8"
+        android:id="@+id/option1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_back_white_stroke_blue"
+        android:text="Option 2"
+        android:textColor="#1F6BB8"
+        android:id="@+id/option2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_back_white_stroke_blue"
+        android:text="Option 3"
+        android:textColor="#1F6BB8"
+        android:id="@+id/option3"/>
+    
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_back_green"
+        android:text="@string/question_next"
+        android:textColor="#1F6BB8"
+        android:id="@+id/nextBtn"/>
+
+</LinearLayout>
